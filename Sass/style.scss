@@ -19,13 +19,15 @@ body{
 
     .container{
         width: 327px;
+        height: 530px;
         background-color: white;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 40px;
         border-radius: 10px;
+        box-shadow: 1px 1px 20px  1px $GrayishBlue;
         .section_1{
-           .img{ background-image: url(/images/drawers.jpg);
+            .img{ background-image: url(/images/drawers.jpg);
             background-size: cover;
             width: 327px;
             height:200px;
@@ -53,9 +55,9 @@ body{
                     color: $DesaturatedDarkBlue;
                 }
 
-                .user{
+                .user-1{
                     margin-top: 40px;
-                    display: flex;
+                    display: none;
                     align-items: start;
                     height: 60px;
                     
@@ -84,7 +86,8 @@ body{
                     }
 
                     .share{
-                        margin-left: 80px;
+                        
+                        margin-left: 70px;
                         width: 30px;
                         height: 30px;
                         padding: 10px;
@@ -94,16 +97,64 @@ body{
                         align-items: center;
                         justify-content: center;
                         .share_icon{
-                           width: 17px;
-                           height: 12px;
+                        width: 19px;
+                        height: 15px;
                             
-                       
+                    
 
                         }
                     }
 
                 }
+                .user-2{
+                    background-color: $VeryDarkGrayishBlue;
+                    width:327px ;
+                   
+                    border-radius:0 0 10px 10px ;
+                    padding: 0;
+                    margin-top: 32px;
+                    margin-bottom:-2px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    
+                    .icons{
+                        p{
+                            letter-spacing: 4px;
+                            font-size: 1.2em;
+                            font-weight: 500;
+                            color: $GrayishBlue;
+                            
+                        }
+
+                        margin-right: 80px;
+                        gap: 15px;
+                        display: flex;
+
+                    }
+                    .share2{
+                        margin-left: -60px;
+                        width: 30px;
+                        height: 30px;
+                        
+                        border-radius: 50%;
+                        background-color: $DesaturatedDarkBlue;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .share_icon{
+                        width: 17px;
+                        height: 12px;
+                    
+                            
+                    
+
+                        }
+                }
             }
+
         }
     }
 
@@ -123,4 +174,4 @@ footer{
 
         a { color: hsl(228, 45%, 44%);} }
 
-}
+}}

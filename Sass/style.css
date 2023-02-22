@@ -12,11 +12,13 @@ body {
 }
 body .container {
   width: 327px;
+  height: 530px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 40px;
   border-radius: 10px;
+  box-shadow: 1px 1px 20px 1px hsl(212deg, 23%, 69%);
 }
 body .container .section_1 .img {
   background-image: url(/images/drawers.jpg);
@@ -46,31 +48,31 @@ body .container .section_2 .text {
   margin-right: 15px;
   color: hsl(214deg, 17%, 51%);
 }
-body .container .section_2 .user {
+body .container .section_2 .user-1 {
   margin-top: 40px;
-  display: flex;
+  display: none;
   align-items: start;
   height: 60px;
   width: 100%;
 }
-body .container .section_2 .user .avatar {
+body .container .section_2 .user-1 .avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 15px;
 }
-body .container .section_2 .user .name .name_michelle {
+body .container .section_2 .user-1 .name .name_michelle {
   font-size: 1.1em;
   color: hsl(217deg, 19%, 35%);
   font-weight: 700;
 }
-body .container .section_2 .user .name .date {
+body .container .section_2 .user-1 .name .date {
   color: hsl(214deg, 17%, 51%);
   font-size: 1em;
   margin-top: 2px;
 }
-body .container .section_2 .user .share {
-  margin-left: 80px;
+body .container .section_2 .user-1 .share {
+  margin-left: 70px;
   width: 30px;
   height: 30px;
   padding: 10px;
@@ -80,18 +82,54 @@ body .container .section_2 .user .share {
   align-items: center;
   justify-content: center;
 }
-body .container .section_2 .user .share .share_icon {
+body .container .section_2 .user-1 .share .share_icon {
+  width: 19px;
+  height: 15px;
+}
+body .container .section_2 .user-2 {
+  background-color: hsl(217deg, 19%, 35%);
+  width: 327px;
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: -2px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .container .section_2 .user-2 .icons {
+  margin-right: 80px;
+  gap: 15px;
+  display: flex;
+}
+body .container .section_2 .user-2 .icons p {
+  letter-spacing: 4px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: hsl(212deg, 23%, 69%);
+}
+body .container .section_2 .user-2 .share2 {
+  margin-left: -60px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: hsl(214deg, 17%, 51%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .section_2 .user-2 .share2 .share_icon {
   width: 17px;
   height: 12px;
 }
-
-footer {
+body footer {
   margin: 40px 0;
 }
-footer .attribution {
+body footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-footer .attribution a {
+body footer .attribution a {
   color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
