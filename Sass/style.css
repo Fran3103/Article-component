@@ -1,0 +1,97 @@
+@import url(/Sass/cssreload.css);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210deg, 46%, 95%);
+  font-family: "Manrope";
+  font-size: 0.7em;
+}
+body .container {
+  width: 327px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+body .container .section_1 .img {
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  width: 327px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+body .container .section_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  padding-bottom: 2px;
+}
+body .container .section_2 h1 {
+  margin: 15px 0;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+}
+body .container .section_2 .text {
+  margin: 2px 0;
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-right: 15px;
+  color: hsl(214deg, 17%, 51%);
+}
+body .container .section_2 .user {
+  margin-top: 40px;
+  display: flex;
+  align-items: start;
+  height: 60px;
+  width: 100%;
+}
+body .container .section_2 .user .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+body .container .section_2 .user .name .name_michelle {
+  font-size: 1.1em;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+}
+body .container .section_2 .user .name .date {
+  color: hsl(214deg, 17%, 51%);
+  font-size: 1em;
+  margin-top: 2px;
+}
+body .container .section_2 .user .share {
+  margin-left: 80px;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .section_2 .user .share .share_icon {
+  width: 17px;
+  height: 12px;
+}
+
+footer {
+  margin: 40px 0;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
