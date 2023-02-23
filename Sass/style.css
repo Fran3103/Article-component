@@ -50,7 +50,7 @@ body .container .section_2 .text {
 }
 body .container .section_2 .user-1 {
   margin-top: 40px;
-  display: none;
+  display: flex;
   align-items: start;
   height: 60px;
   width: 100%;
@@ -72,9 +72,10 @@ body .container .section_2 .user-1 .name .date {
   margin-top: 2px;
 }
 body .container .section_2 .user-1 .share {
-  margin-left: 70px;
-  width: 30px;
-  height: 30px;
+  margin-top: 2px;
+  margin-left: 60px;
+  width: 35px;
+  height: 35px;
   padding: 10px;
   border-radius: 50%;
   background-color: hsl(210deg, 46%, 95%);
@@ -89,12 +90,14 @@ body .container .section_2 .user-1 .share .share_icon {
 body .container .section_2 .user-2 {
   background-color: hsl(217deg, 19%, 35%);
   width: 327px;
+  position: absolute;
+  top: 73%;
   border-radius: 0 0 10px 10px;
   padding: 0;
-  margin-top: 32px;
-  margin-bottom: -2px;
+  margin-top: 24px;
+  margin-bottom: -8px;
   height: 70px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -110,7 +113,7 @@ body .container .section_2 .user-2 .icons p {
   color: hsl(212deg, 23%, 69%);
 }
 body .container .section_2 .user-2 .share2 {
-  margin-left: -60px;
+  margin-left: -90px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -124,7 +127,7 @@ body .container .section_2 .user-2 .share2 .share_icon {
   height: 12px;
 }
 body footer {
-  margin: 40px 0;
+  margin-top: 60px;
 }
 body footer .attribution {
   font-size: 11px;
@@ -132,4 +135,66 @@ body footer .attribution {
 }
 body footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+.display {
+  display: flex;
+}
+
+@media screen and (min-width: 760px) {
+  body .container {
+    width: 740px;
+    height: 275px;
+    flex-direction: row;
+  }
+  body .container .section_1 .img {
+    width: 285px;
+    height: 275px;
+    border-radius: 10px 0 0 10px;
+  }
+  body .container .section_2 {
+    justify-content: flex-start;
+  }
+  body .container .section_2 h1 {
+    font-size: 1.7em;
+    margin: 15px 50px 10px 0;
+  }
+  body .container .section_2 .text {
+    font-size: 1.2em;
+  }
+  body .container .section_2 .user-1 {
+    margin-top: 16px;
+  }
+  body .container .section_2 .user-1 .share {
+    margin-left: 170px;
+  }
+  body .container .section_2 .user-2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    top: -115px;
+    left: 160px;
+    padding: 10px;
+    height: 100px;
+    width: 250px;
+  }
+  body .container .section_2 .user-2 .icons {
+    margin-right: 0;
+  }
+  body .container .section_2 .user-2 .share2 {
+    display: none;
+  }
+  body .container .section_2 .user-2 .share2 .share_icon {
+    display: none;
+  }
+  body .container .section_2 .user-2::after {
+    content: "";
+    border: 10px solid;
+    border-color: hsl(217deg, 19%, 35%) transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */

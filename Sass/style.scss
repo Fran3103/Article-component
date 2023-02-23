@@ -57,7 +57,7 @@ body{
 
                 .user-1{
                     margin-top: 40px;
-                    display: none;
+                    display: flex;
                     align-items: start;
                     height: 60px;
                     
@@ -86,10 +86,10 @@ body{
                     }
 
                     .share{
-                        
-                        margin-left: 70px;
-                        width: 30px;
-                        height: 30px;
+                        margin-top: 2px;
+                        margin-left: 60px;
+                        width: 35px;
+                        height: 35px;
                         padding: 10px;
                         border-radius: 50%;
                         background-color: $LightGrayishBlue;
@@ -109,13 +109,14 @@ body{
                 .user-2{
                     background-color: $VeryDarkGrayishBlue;
                     width:327px ;
-                   
+                    position: absolute  ;
+                    top: 73%;
                     border-radius:0 0 10px 10px ;
                     padding: 0;
-                    margin-top: 32px;
-                    margin-bottom:-2px;
+                    margin-top: 24px;
+                    margin-bottom:-8px;
                     height: 70px;
-                    display: flex;
+                    display: none  ;
                     align-items: center;
                     justify-content: space-evenly;
 
@@ -135,7 +136,7 @@ body{
 
                     }
                     .share2{
-                        margin-left: -60px;
+                        margin-left: -90px;
                         width: 30px;
                         height: 30px;
                         
@@ -156,22 +157,92 @@ body{
             }
 
         }
+
+      
     }
-
-
-
-
-
-
-
-
-footer{
-    margin:40px 0;
+   
+    footer{
+        margin-top :60px;
+        
+        .attribution { 
+            font-size: 11px; 
+            text-align: center; 
     
-    .attribution { 
-        font-size: 11px; 
-        text-align: center; 
+            a { color: hsl(228, 45%, 44%);} }
+    
+    }}
+.display{
+    display: flex;
+}
+    @media screen and (min-width:760px) {
 
-        a { color: hsl(228, 45%, 44%);} }
+        body{
+        .container{
 
-}}
+            width: 740px;
+            height: 275px;
+            flex-direction: row;
+
+            .section_1{
+                .img{
+                    width: 285px;
+                    height: 275px;
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+            .section_2{
+
+                justify-content: flex-start;
+                
+                h1{
+                
+                    font-size: 1.7em;
+                    margin: 15px 50px 10px 0;
+                    
+                }
+                .text{
+                    font-size: 1.2em;
+                    
+                }
+
+                .user-1{
+                    margin-top: 16px;
+                    .share{
+                        margin-left: 170px;
+                    }
+                }
+
+                .user-2{
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    position: relative;
+                    top: -115px;
+                    left: 160px;
+                    padding: 10px;
+                    height: 100px;
+                    width: 250px;
+                    .icons{
+                        margin-right: 0;
+                    }
+                    .share2{
+                        display: none;
+                        .share_icon{
+                            display: none;
+                        }}
+            }
+            .user-2::after{
+                content: '';
+                border: 10px solid;
+                border-color: $VeryDarkGrayishBlue transparent transparent;
+                position:absolute;
+                top: 100%;
+                left: 100px;
+            }
+
+        }
+
+        
+    }}
+    }
